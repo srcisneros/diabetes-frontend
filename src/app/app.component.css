@@ -1,0 +1,14 @@
+
+
+.tituloClass{
+   font-family: "Roboto", sans-serif;
+   font-size: 25px;
+}
+
+.nav-link.active {
+    color: white;
+}
+
+.nav-link:not(.active) {
+    color: white;
+}

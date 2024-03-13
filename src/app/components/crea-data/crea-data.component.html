@@ -1,0 +1,97 @@
+<div class="card" [formGroup]="form">
+   
+    <div class="card-body">
+        <h5 class="card-title text-center">Agregar Datos</h5>
+  
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="hcl"><b>HCL</b></label>
+            <input type="text" id="hcl" formControlName="hcl" class="form-control" (keydown)="preventSpecialCharacters($event)" placeholder="Ingrese la Historia Clinica">
+          </div>
+  
+          <div class="form-group mb-3" style="margin-top: 5%">
+            <label for="genero">Genero</label>
+            <select class="form-select" formControlName="genero" aria-label="Default select example">
+              <option selected>Selecciona un género:</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+            </select>   
+          </div>
+  
+         
+          <div class="form-group mb-3">
+            <label for="edad">Edad</label>
+            <input type="text" id="edad" class="form-control" formControlName="edad" (keydown)="preventSpecialCharacters($event)" placeholder="Ingrese la edad">
+          </div>
+  
+          <div class="form-group mb-3">
+            <label for="imc">IMC</label>
+            <input type="text" id="imc" class="form-control" formControlName="imc" (keydown)="preventSpecialCharacters($event)" placeholder="Ingrese el IMC">
+          </div>
+    
+  
+        </div>
+
+ 
+        <div class="col-md-4">
+          
+          <div class="form-group mb-3">
+            <label for="colesterol">Colesterol</label>
+            <input type="text" id="colesterol" class="form-control" formControlName="colesterol" (keydown)="preventSpecialCharacters($event)" placeholder="Ingrese el valor del colesterol">
+          </div>
+  
+          <div class="form-group mb-3">
+            <label for="trigliceridos">Trigliceridos</label>
+            <input type="text" id="trigliceridos" class="form-control" formControlName="trigliceridos" (keydown)="preventSpecialCharacters($event)" placeholder="Ingrese los trigliceridos">
+          </div>
+  
+          <div class="form-group mb-3">
+            <label for="hdl">HDL</label>
+            <input type="text" id="hdl" class="form-control" formControlName="hdl" (keydown)="preventSpecialCharacters($event)" placeholder="Ingrese el HDL">
+          </div>
+  
+          <div class="form-group mb-3">
+            <label for="urea">Urea</label>
+            <input type="text" id="urea" class="form-control" formControlName="urea" (keydown)="preventSpecialCharacters($event)" placeholder="Ingrese el valor de la Urea">
+          </div>
+
+          <div class="form-group">
+            <label for="resultado">RESULTADO</label>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          
+          <div class="form-group mb-3">
+            <label for="ldl">LDL</label>
+            <input type="text" id="ldl" class="form-control" formControlName="ldl" (keydown)="preventSpecialCharacters($event)" placeholder="Ingrese el LDL">
+          </div>
+  
+          <div class="form-group mb-3">
+            <label for="vldl">VLDL</label>
+            <input type="text" id="vldl" class="form-control" formControlName="vldl" (keydown)="preventSpecialCharacters($event)" placeholder="Ingrese el VLDL">
+          </div>
+          <div class="form-group mb-3">
+            <label for="creatinina">Creatinina</label>
+            <input type="text" id="creatinina" class="form-control" formControlName="creatinina" (keydown)="preventSpecialCharacters($event)" placeholder="Ingrese el valor de la Creatinina">
+          </div>
+  
+          <div class="form-group mb-3">
+            <label for="hba1c">Hemoglobina Glicocilada</label>
+            <input  type="text" id="hba1c" class="form-control" formControlName="hba1c" (keydown)="preventSpecialCharacters($event)" placeholder="Ingrese el valor de la Hemoglobina Glicocilada ">
+            
+          </div>
+
+        </div>
+      </div>
+  
+      <button style="width: 15%;" class="btn btn-primary btn-block" (click)="onSubmit()">Guardar</button>
+      <button style="width: 15%;" class="btn btn-primary btn-block" (click)="onSubmit()">Editar</button>
+      <button style="width: 15%;" class="btn btn-primary btn-block" (click)="onSubmit()">Eliminar</button>
+    </div>
+  </div>
+  
+    
+  
+  
